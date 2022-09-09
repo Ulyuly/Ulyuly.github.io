@@ -12,7 +12,7 @@ window.addEventListener("load", () => {
         alert();
       });
   
-      XHR.open("POST", "empty.php");
+      XHR.open("POST", "../empty.php");
   
       XHR.send(FD);
 
