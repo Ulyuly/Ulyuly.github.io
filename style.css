@@ -55,7 +55,7 @@ a {
         text-align: center;
     }
     .menuContainer {
-        padding-right: 14%
+        padding-right: 17%;
     }
 }
 
@@ -76,26 +76,7 @@ a {
     flex-flow: column;
     padding: 33vh 12vw 30vh 12.5vw;
     scroll-snap-align: start;
-    transition: 0.6s ease;
-}
-
-@media (max-width: 2000px){
-    .firstPanel{
-    background-size: 200%, 200%
-    }
-}
-
-@media only screen and (max-width: 600px){
-    .firstPanel {
-        padding-top: 20vh;
-        height: 55vh;
-    }
-    .firstPanelButton {
-        margin-top: 5px;
-    }
-    .nextButtonSlider{
-        margin-left: 40px;
-    }
+    transition: 0.6s ease all;
 }
 
 .slider {
@@ -218,6 +199,32 @@ a {
     50% {color: white;}
 }
 
+@media (max-width: 2000px){
+    .firstPanel{
+    background-size: 200%, 200%
+    }
+}
+
+@media (max-width: 600px){
+    .firstPanel {
+        scroll-snap-align: none;
+        padding-top: 15vh;
+        padding-bottom: 10vh;
+        height: 80vh;
+    }
+    .firstPanelButton {
+        margin-top: 5px;
+    }
+    .nextButtonSlider{
+        margin-left: 40px;
+    }
+    .firstPanelParagraph{
+        font-size: 2em;
+        color: black;
+    }
+}
+
+
 .secondPanel {
 	height: 55vh;
     background-color: white;
@@ -265,18 +272,25 @@ a {
 
 @media only screen and (max-width: 600px){
     .secondPanel {
+        height: 100vh;
+        padding-top: 30%;
         flex-flow: column;
         line-height: 1;
         font-size: 0.9em;
+        scroll-snap-align: none;
     }
     .secondPanelImg {
-        display: none;
+        margin-left: 10%;
+        margin-top: 10%;
+        width: 50vw;
+        height: 50vw;
     }
 }
 
 @media (max-width: 1300px){
     .secondParagraph {
         font-size: 1em;
+        font-weight: 550;
     }
 
     .secondPanelList {
@@ -320,8 +334,13 @@ a {
     width: 32vw;
     height: 32vw;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-}
+}   
 
+.thirdParagraph {
+    margin-top: -2%;
+    line-height: 2;
+    font-size: 1.2em;
+}
 
 @media (min-width: 2000px){
     .thirdPanelImg{
@@ -347,20 +366,21 @@ a {
 
 @media only screen and (max-width: 600px){
     .thirdPanel {
+        height: 100vh;
+        padding-top: 30%;
         flex-flow: column;
         line-height: 1;
-        font-size: 0.9em;
+        font-size: 1em;
+        scroll-snap-align: none;
     }
     .thirdPanelImg {
-        display: none;
+        margin-left: 10%;
+        margin-top: 10%;
+        width: 50vw;
+        height: 50vw;
     }
 }
 
-.thirdParagraph {
-    margin-top: -2%;
-    line-height: 2;
-    font-size: 1.2em;
-}
 
 .fourthPanel {
 	height: 55vh;
@@ -417,9 +437,12 @@ a {
 
 @media only screen and (max-width: 600px){
     .fourthPanel {
+        height: 70vh;
+        padding-top: 20vh;
         flex-flow: column;
         line-height: 1;
         font-size: 0.9em;
+        scroll-snap-align: none;
     }
     .fourthPanelImg {
         display: none;
@@ -430,7 +453,8 @@ a {
 
 .videoEmbed {
     position: fixed;
-    top: 10%;
+    top: 0%;
+    left: 0%;
     margin-left: 0%;
     z-index: 100;
     width: 100%;
@@ -438,8 +462,29 @@ a {
     display: none;
     align-items: center;
     justify-content: center;
+    background-color: rgba(0,0,0,0.8)
 }
 
+.videoEmbed iframe {
+    outline: none;
+    border: none;
+}
+
+.videoEmbedIframe {
+    margin-left: 12%;
+    margin-top: 4%;
+}
+
+.fourthParagraphVideoMobile {
+    font-size: 2em;
+    display: none;
+}
+
+@media (max-width: 600px){
+    .fourthParagraphVideoMobile {
+        display: block;
+}
+}
 
 @media (min-width: 2000px) {
     .videoEmbed {
@@ -449,16 +494,12 @@ a {
 
 @media (max-width: 1540px){
     .videoEmbed {
-        margin-left: -13%;
         transform: scale(0.8,0.8);
     }
 
 }
 
-.videoEmbed iframe {
-    outline: none;
-    border: none;
-}
+
 
 .form {
     height: 60vh;
@@ -496,24 +537,24 @@ a {
 }
 
 .formTextSmall {
-
-    width: 30.7vh;
+    width: 40%;
     height: 4.5vh;
 }
 
 .formTextLarge {
-    width: 63vh;
+    width: 99%;
     height: 4.5vh;
 }
 
 .formTextAreaLarge {
-    width: 63vh;
+    width: 99%;
     height: 15vh;
 }
 
-.imienazwisko {
+.formNameSurname {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 103%;
 }
 
 .formSubmit {
@@ -563,18 +604,29 @@ a {
 
 @media only screen and (max-width: 600px){
     .formTextSmall{
-        width: 20vh;
+        margin-top: 5%;
+        width: 30%;
+        font-size: 1;
+        margin-left: 20%;
+        margin-right: 20%;
     }
     .formTextLarge{
-        width: 40vh;
-        margin-left: 10%;
+        width: 70%;
+        margin-left: 14%;
     }
     .formTextAreaLarge{
-        width: 40vh;
-        margin-left: 10%;
+        width: 70%;
+        margin-left: 14%;
     }
     .formAgreement{
-        width: 60
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .form {
+        padding-top: 10%;
+        scroll-snap-align: none;
+        height: 80vh;
     }
 }
 
@@ -600,12 +652,12 @@ a {
     line-height: 2;
     display: flex;
     flex-flow: column;
-    width: 20%;
+    width: 7%;
 }
 
 .footerMiddle {
     margin-top: 1%;
-    margin-left: 4%;
+    margin-left: 15%;
     font-size: 0.9em;
     width: 80%;
     display: grid;
@@ -629,23 +681,42 @@ a {
         line-height: 1;
         font-size: 0.8em;
         padding-right: 0;
+        scroll-snap-align: none;
+        height: 90vh;
+    }
+
+    .footerFlex{
+        flex-flow: column;
+        align-items: center;
     }
 
     .footerLeft{
         line-height: 1;
+        font-size: 1.5em;
+        width: 38%;
+        text-align: center;
+
     }
 
     .footerMiddle{
-        grid-template-rows: repeat(5, 4)
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 5vh);
+        margin-left: 0%;
+        margin-top: -5%;
+        font-size: 1em;
+        line-height: 1.3
     }
 
     .mapThumb {
         margin-top: 90%;
-        transform: scale(0.75,0.75)
+        transform: scale(1.25,1.25);
+        margin-top: 20%;
+        margin-bottom: 40%;
+
     }
 
     .footerRight {
-        margin-top: -20%;
+        margin-top: 0%;
         margin-right: 5%;
     }
 }

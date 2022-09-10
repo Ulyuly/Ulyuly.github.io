@@ -53,12 +53,13 @@ function validateForm() {
 
     if(validatorErrors>0){  
         alert("Uzupełnij lub popraw: "+validatorErrorsText+"inaczej nie będziesz mógł wysłać formularza.")  //checking for the amount of errors
+        return false;
     } else {
+        submitFormAjax();
         let form = document.getElementById("formContact");
         for(i=0;i<inputs.length;i++){
             inputs[i].style.borderColor ="transparent";
         }
-        alert("Wysłano pomyślnie")
         form.reset();
     }
   }

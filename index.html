@@ -12,7 +12,7 @@
   <body>
     <div class="menu">
       <div>
-        <img class="menuLogo" src="bin/logo.png" />
+        <img class="menuLogo" src="bin/logo.png" onclick="darkMode()"/>
       </div>
       <div class="menuContainer">
         <p class="menuItem">I stopnia</p>
@@ -79,7 +79,7 @@
     </div>
     <div class="secondPanel">
       <div class="secondPanelText">
-        <h1>Dla kogo?</h1>
+        <h1 class="secondHeader">Dla kogo?</h1>
         <br /><br />
         <p class="secondParagraph">
           Dedykowane nauczycielom posiadającym przygotowanie pedagogiczne,
@@ -110,7 +110,7 @@
     </div>
     <div class="thirdPanel">
       <div class="thirdPanelText">
-      <h1>Po co?</h1>
+      <h1 class="thirdHeader">Po co?</h1>
       <br><br>
       <p class="thirdParagraph">
         UW wie co zrobić, by programy proponowanych kierunków studiów były jak
@@ -129,7 +129,7 @@
     </div>
     <div class="fourthPanel">
       <div class="fourthPanelText">
-      <h1>Z kim?</h1>
+      <h1 class="fourthHeader">Z kim?</h1>
       <br><br>
       <p class="fourthParagraph">
         Ciekawość jest najpotężniejszą cechą ludzką, która popycha ludzi do
@@ -145,26 +145,30 @@
         gospodarce i kierunku zmian na dynamicznym rynku pracy. Nasi absolwenci
         znajdują pracę zgodną ze swoimi zainteresowaniami i wykształceniem.
       </p>
+      <br><br>
+      <p class="fourthParagraphVideoMobile">
+        <a href="https://www.youtube.com/watch?v=23F2iUEP2Qc" target="_blank">Tutaj zobacz nasze wideo :)</a>
+      </p>
     </div>
       <img class="fourthPanelImg" src="bin/fourthPanel.png" alt="video" onclick="playVideo()"/>
-      <div class="videoEmbed" onclick="stopVideo()"">
+      <div class="videoEmbed" onclick="stopVideo()">
         <iframe width="1280" class="videoEmbedIframe" height="780" src="https://www.youtube.com/embed/23F2iUEP2Qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <script src="videoPlayer.js"></script>
     </div>
     <div class="form">
-      <h3>Nie znalazłeś odpowiedniego kontaktu?</h3>
-      <h4>Skorzystaj z formularza.</h4>
+      <h3 class="formUpperText">Nie znalazłeś odpowiedniego kontaktu?</h3>
+      <h4 class="formUpperText">Skorzystaj z formularza.</h4>
       <div class="formContent">
-      <form name="myForm" onsubmit="return validateForm()" id="formContact">
-        <div class="imienazwisko">
-          <input type="text" name="name" class="formTextSmall formInput" placeholder="Imię">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-          <input type="text" name="surname" class="formTextSmall formInput" placeholder="Nazwisko">
+      <form name="myForm" method="GET" onsubmit="return validateForm()" id="formContact">
+        <div class="formNameSurname">
+          <input type="text" name="name" id="name" class="formTextSmall formInput" placeholder="Imię">
+          <input type="text" name="surname" id="surname" class="formTextSmall formInput" placeholder="Nazwisko">
         </div>
         <br>
-          <input type="text" name="email" class="formTextLarge formInput" id="email" placeholder="Adres e-mail">
+          <input type="text" name="email" id="email" class="formTextLarge formInput" placeholder="Adres e-mail">
         <br><br>
-          <input type="textarea" name="textarea" class="formTextAreaLarge formInput" placeholder="Treść wiadomości">
+          <input type="textarea" name="textarea" id="textarea" class="formTextAreaLarge formInput" placeholder="Treść wiadomości">
         <br>
         <div class="formAgreement"><input type="checkbox" class="agreement formInput" name="agreement"> <span class="agreementText">Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy z dnia 16 lipca 2004 roku Prawo 
         telekomunikacyjne w celach marketingowych przez Collegium Da Vinci i oświadczam, iż podanie przeze mnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu do moich danych osobowych, 
@@ -179,12 +183,12 @@
     <div class="footer">
       <div class="footerFlex">
       <div class="footerLeft">
-        <p>ul. Głogowska 10<br>
-        61-579 Poznań<br>
+        <p>ul. Głogowska 10
+        61-579 Poznań
         tel. 61 27 11 000
         </p>
         <br>
-        <span><a href="https://goo.gl/maps/ovHVNV1LscBzTHBU7"><img class="mapThumb" src="bin/mapThumb.png"></span></a>
+        <span><a href="https://goo.gl/maps/ovHVNV1LscBzTHBU7" target="_blank"><img class="mapThumb" src="bin/mapThumb.png"></span></a>
       </div>
       <div class="footerMiddle">
         <div class="footerLink">O nas</div>
@@ -220,5 +224,6 @@
     <script src="scripts/formValidate.js"></script>
     <script src="scripts/videoPlayer.js"></script>
     <script src="scripts/formAjax.js"></script>
+    <script src="scripts/darkMode.js"></script>
   </body>
 </html>

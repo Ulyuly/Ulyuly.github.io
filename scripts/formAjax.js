@@ -1,28 +1,17 @@
-window.addEventListener("load", () => {
-    function sendData() {
-      const XHR = new XMLHttpRequest();
-  
-      const FD = new FormData(form);
+function submitFormAjax() {
+  let xmlhttp= window.XMLHttpRequest ?
+      new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
 
-      XHR.addEventListener("load", (event) => {
-        alert(event.target.responseText);
-      });
-  
-      XHR.addEventListener("error", (event) => {
-        alert();
-      });
-  
-      XHR.open("POST", "../empty.php");
-  
-      XHR.send(FD);
+  xmlhttp.onreadystatechange = function() {
+      if (this.readyState === 4 && this.status === 200)
+          alert(this.responseText); // Here is the respondse
+  }
 
-    }
-  
-    const form = document.getElementById("formContact");
-  
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-  
-      sendData();
-    });
-  });
+  let name = document.getElementById('name').value;
+  let surname = document.getElementById('surname').value;
+  let email = document.getElementById('email').value;
+  let content = document.getElementById('textarea').value;
+
+  xmlhttp.open("GET","empty.php?name=" + name + "&surname=" + surname + "&email=" + email + "&content=" + content, true);
+  xmlhttp.send();
+}
