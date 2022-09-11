@@ -1,6 +1,7 @@
 let currentSlideIndex = 1;
 showSlides(currentSlideIndex) 
 
+
 function plusSlides(slideIndex) {
   showSlides(currentSlideIndex += slideIndex);
 }
@@ -35,4 +36,3 @@ function showSlides(slideIndex) {
   background.style.backgroundSize = "120% 100%";
   }
 }
-
