@@ -5,5 +5,6 @@ function burgerMenu() {
         navBar.style.display = "none";
     } else {
         navBar.style.display = "block";
+        navBar.style.height = "20%";
     }
 }
