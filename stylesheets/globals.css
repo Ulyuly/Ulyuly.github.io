@@ -16,3 +16,14 @@ a {
     color: rgb(0,160,200);
     text-decoration: none
 }
+
+.invisible img{
+    height: 1px;
+    width: 1px;
+    padding: none;
+}
+
+.invisible {
+    height: 0;
+    width: 0;
+}
