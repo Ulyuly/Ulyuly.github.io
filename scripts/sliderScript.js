@@ -1,23 +1,14 @@
-let currentSlideIndex = 1;
-showSlides(currentSlideIndex) 
+let currentSlide = 1;
+showSlides(currentSlide) 
 
-
-function plusSlides(slideIndex) {
-  showSlides(currentSlideIndex += slideIndex);
-}
-
-function currentSlide(slideIndex) {
-  showSlides(currentSlideIndex = slideIndex);
-}
-
-function showSlides(slideIndex) {
+function showSlides(newSlideIndex) {
   let i;
   let slides = document.getElementsByClassName("slider");
   let dots = document.getElementsByClassName("sliderDot");
   let background = document.getElementById("firstPanel");
 
-  if (slideIndex > slides.length) {currentSlideIndex = 1}
-  if (slideIndex < 1) {currentSlideIndex = slides.length}
+  if (newSlideIndex > slides.length) {currentSlide = 1}
+  if (newSlideIndex < 1) {currentSlide = slides.length}
 
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
@@ -26,14 +17,22 @@ function showSlides(slideIndex) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
 
-  slides[currentSlideIndex-1].style.display = "block";
-  dots[currentSlideIndex-1].className += " active";
+  slides[currentSlide-1].style.display = "block";
+  dots[currentSlide-1].className += " active";
   if(document.body.clientWidth > 460){
   background.style.backgroundColor = "#333";
-  background.style.background = "url('bin/sliderphoto"+currentSlideIndex+".jpeg') no-repeat fixed center";
+  background.style.background = "url('bin/sliderphoto"+currentSlide+".jpeg') no-repeat fixed center";
   background.style.backgroundSize = "100% 100%";
   } else { 
-  background.style.background = "url('bin/sliderphoto"+currentSlideIndex+"mobile.jpg') no-repeat fixed center";
+  background.style.background = "url('bin/sliderphoto"+currentSlide+"mobile.jpg') no-repeat fixed center";
   background.style.backgroundSize = "120% 100%";
   }
+}
+
+function dotChanger(newSlideIndex) {
+  showSlides(currentSlide = newSlideIndex);
+}
+
+function plusSlides(newSlideIndex) {
+  showSlides(currentSlide += newSlideIndex);
 }
