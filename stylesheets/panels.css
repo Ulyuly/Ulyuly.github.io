@@ -25,6 +25,7 @@
     color: white;
     cursor: pointer;
     transition: 0.6s ease;
+    user-select: none;
 }
 
 .nextButtonSlider {
@@ -35,6 +36,7 @@
     color: white;
     cursor: pointer;
     transition: 0.6s ease;
+    user-select: none;
 }
 
 .prevButtonSlider:hover, .nextButtonSlider:hover {
