@@ -1,5 +1,5 @@
 function burgerMenu() {
-    var navBar = document.getElementsByClassName("menuBurgerContents")[0];
+    let navBar = document.getElementsByClassName("menuBurgerContents")[0];
     if(navBar.style.display === "block"){
         navBar.style.display = "none";
     } else {
