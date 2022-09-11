@@ -1,0 +1,504 @@
+.firstPanel {
+	height: 45vh;
+    background-color: white;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ), url(bin/sliderphoto4.jpeg) no-repeat fixed center;
+    background-size: 110%, 150%;
+    display: flex;
+    flex-flow: column;
+    padding: 33vh 12vw 30vh 12.5vw;
+    scroll-snap-align: start;
+    transition: 0.6s ease all;
+}
+
+.slider {
+    display: none;
+}
+
+.prevButtonSlider {
+    position: absolute;
+    top: 83%;
+    transform: scale(-3,3);
+    left: 13.5%;
+    color: white;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+.nextButtonSlider {
+    position: absolute;
+    top: 83%;
+    left: 16.2%;
+    transform: scale(3,3);
+    color: white;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+.prevButtonSlider:hover, .nextButtonSlider:hover {
+    color: rgb(255,205,25);
+}
+
+.sliderDot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 160%;
+}
+
+.sliderDotContainer {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    right: 6.3%;
+    top: 41%;
+}
+
+.sliderDot:hover, .active{
+    background-color: rgb(255,205,25);
+}
+
+.fader {
+    animation-name: fader;
+    animation-duration: 0.5s;
+  }
+  
+
+@keyframes fader {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+
+.firstPanelParagraph{
+    font-weight: 100;
+    font-size: 2.8rem;
+    line-height: 1.5;
+    font-family: 'Muli ExtraLight', 'Mulish', sans-serif;
+}   
+
+.firstPanelParagraph:first-child{
+    color: white;
+    margin-top: 14vh;
+}
+
+.firstPanelParagraph:nth-child(2){
+    color: rgb(0,182,220);
+}
+
+
+.firstPanelButton {
+    width: 13rem;
+    height: 3.3rem;
+    border-radius: 4em;
+    border: none;
+    font-size: 0.89rem;
+    font-family: 'muli', 'Mulish', sans-serif;
+    margin-left: -0.1%;
+    cursor: pointer;
+}
+
+.firstPanelButton:nth-child(2){
+    border: white 2px solid;
+    background-color: transparent;
+    color: white;
+
+}
+
+.firstPanelButton:hover{
+    animation-name: sliderButtonAnim1;
+    animation-duration: 2s;
+}
+
+.firstPanelButton:nth-child(2):hover{
+    animation-name: sliderButtonAnim2;
+    animation-duration: 2s;
+}
+
+
+@keyframes sliderButtonAnim1{
+    50% {background-color: rgb(0,182,220);}
+    50% {color: black;}
+}
+
+@keyframes sliderButtonAnim2{
+    50% {background-color: rgb(0,182,220)}
+    50% {color: white;}
+}
+
+@media (max-width: 2000px){
+    .firstPanel{
+    background-size: 200%, 200%
+    }
+}
+
+@media (max-width: 820px){
+    .firstPanel {
+        scroll-snap-align: none;
+        padding: 25vh 10vw 10vh 5vw;
+        height: 70vh;
+        background: url('bin/sliderphoto1mobile.jpg');
+    }
+    .firstPanelButton {
+        margin-top: 5px;
+        transform: scale(0.75,0.75);
+        margin-top: -5%;
+        margin-bottom: 5%;
+    }
+    .nextButtonSlider{
+        margin-left: 40px;
+    }
+    .firstPanelParagraph{
+        font-size: 2em;
+        color: black;
+    }
+
+    @media (min-height: 1000px) {
+        .firstPanelParagraph:first-child {
+            padding-top: 35%
+        }
+    }
+}
+
+.secondPanel {
+	height: 55vh;
+    background-color: white;
+    display: flex;
+    padding: 20vh 13vw 30vh 13vw;
+    flex-flow: row;
+    scroll-snap-align: start;
+}
+
+.secondPanelText{
+    margin-top: -4%;
+    padding-right: 7%;
+}
+
+.secondPanel h1{
+    color: rgb(0,40,65);
+    font-size: 2.3em;
+}
+
+.secondPanelImg{
+    margin-top: -4%;
+    margin-right: -1%;
+    width: 32vw;
+    height: 32vw;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.secondParagraph {
+    line-height: 2;
+    font-size: 1.2em;
+}
+
+.secondPanelList {
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+.secondPanelList:before {
+    content: "➜";
+    color: aqua;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+@media only screen and (max-width: 820px){
+    .secondPanel {
+        height: 110vh;
+        padding-top: 30%;
+        flex-flow: column;
+        line-height: 1;
+        font-size: 0.9em;
+        scroll-snap-align: none;
+    }
+    .secondPanelImg {
+        margin-left: 10%;
+        margin-top: 10%;
+        width: 50vw;
+        height: 50vw;
+    }
+
+    @media only screen and (max-height: 700px){
+        .secondPanel {
+            height: 150vh;
+        }
+    }
+    @media (min-height: 800px) and (max-height: 900px) and (max-width: 400px){
+        .secondPanel {
+            height: 120vh;
+        }
+    } 
+
+    @media (max-width: 400px) and (min-height: 720px){
+        .secondPanel {
+            height: 130vh;
+        }
+    }
+}   
+
+
+
+@media (max-width: 1300px){
+    .secondParagraph {
+        font-size: 1em;
+        font-weight: 550;
+    }
+
+    .secondPanelList {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 2000px){
+    .secondPanelImg{
+        margin-top: 0%;
+        width: 120%;
+        height: 120%;
+    }
+    .secondPanelText{
+        margin-top: 0%;
+    }
+}
+
+@media (min-height: 1000px) and (max-width: 820px) {
+    .secondPanel {
+        font-size: 1.3em;
+    }
+}
+
+.thirdPanel {
+	height: 55vh;
+    background-color: rgb(243,243,243);
+    display: flex;
+    padding: 20vh 13vw 30vh 13vw;
+    flex-flow: row-reverse;
+    scroll-snap-align: start;
+}
+
+.thirdPanelText{
+    margin-top: 0%;
+    padding-left: 7%;
+}
+
+.thirdPanel h1{
+    color: rgb(0,40,65)
+}
+
+.thirdPanelImg{
+    margin-top: 0%;
+    margin-left: -1%;
+    width: 32vw;
+    height: 32vw;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}   
+
+.thirdParagraph {
+    margin-top: -2%;
+    line-height: 2;
+    font-size: 1.2em;
+}
+
+@media (min-width: 2000px){
+    .thirdPanelImg{
+        margin-top: 0%;
+        width: 120%;
+        height: 120%;
+    }
+    .thirdPanelText{
+        margin-top: 0%;
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 1300px){
+    .thirdParagraph {
+        font-size: 1em;
+    }
+
+    .thirdPanelList {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .thirdPanel {
+        height: 100vh;
+        padding-top: 30%;
+        flex-flow: column;
+        line-height: 1;
+        font-size: 1em;
+        scroll-snap-align: none;
+    }
+    .thirdPanelImg {
+        margin-left: 10%;
+        margin-top: 10%;
+        width: 50vw;
+        height: 50vw;
+    }
+
+    @media only screen and (max-height: 700px){
+        .thirdPanel {
+            height: 150vh;
+        }
+    }
+
+    @media only screen and (min-height: 700px) and (max-height: 895px){
+        .thirdPanel {
+            height: 115vh;
+        }
+    }
+
+    @media (min-height: 1000px) {
+        .thirdPanel {
+            font-size: 1.3em;
+        }
+}
+}
+
+
+.fourthPanel {
+	height: 55vh;
+    background-color: white;
+    display: flex;
+    padding: 20vh 13vw 30vh 13vw;
+    flex-flow: row;
+    scroll-snap-align: start;
+}
+
+.fourthPanelText{
+    padding-right: 7%;
+}
+
+.fourthPanel h1{
+    color: rgb(0,40,65)
+}
+
+.fourthPanelImg{
+    margin-right: -1%;
+    width: 32vw;
+    height: 32vw;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.fourthParagraph {
+    margin-top: -2%;
+    line-height: 2;
+    font-size: 1.2em;
+}
+
+@media (min-width: 2000px){
+    .fourthPanelImg{
+        margin-top: 0%;
+        width: 26vw;
+        height: 26vw;
+    }
+    .fourthPanelText{
+        margin-top: 0%;
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 1300px){
+    .fourthParagraph {
+        font-size: 1em;
+    }
+
+    .fourthPanelList {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .fourthPanel {
+        height: 70vh;
+        padding-top: 20vh;
+        flex-flow: column;
+        line-height: 1;
+        font-size: 0.9em;
+        scroll-snap-align: none;
+    }
+    .fourthPanelImg {
+        display: none;
+    }
+
+    @media only screen and (max-height: 700px){
+        .fourthPanel {
+            height: 150vh;
+        }
+    }
+
+    @media only screen and (min-height: 700px) and (max-height: 895px){
+        .fourthPanel {
+            height: 90vh;
+        }
+    }
+
+    @media (min-height: 1000px) {
+        .fourthPanel {
+            font-size: 1.3em;
+        }
+    }
+}
+
+.videoEmbed {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    margin-left: 0%;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.8)
+}
+
+.videoEmbed iframe {
+    outline: none;
+    border: none;
+}
+
+.videoEmbedIframe {
+    margin-left: 12%;
+    margin-top: 4%;
+}
+
+.fourthParagraphVideoMobile {
+    font-size: 2em;
+    display: none;
+}
+
+@media (max-width: 820px){
+    .fourthParagraphVideoMobile {
+        display: block;
+}
+}
+
+@media (min-width: 1300px) and (max-width: 2000px) {
+    .videoEmbed {
+        padding-left: 5%;
+    }
+}
+@media (min-width: 2000px) {
+    .videoEmbed {
+        padding-left: 13%;
+    }
+}
+
+@media (max-width: 1540px){
+    .videoEmbed {
+        transform: scale(0.8,0.8);
+    }
+
+}

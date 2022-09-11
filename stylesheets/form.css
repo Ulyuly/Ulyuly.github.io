@@ -1,0 +1,186 @@
+.form {
+    height: 60vh;
+    background-color: rgb(245,248,250);
+    padding: 6vh;
+    scroll-snap-align: center;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    line-height: 2;
+    padding-bottom: 14vh;
+}
+
+.form h4 {
+    color: rgb(123,148,165);
+    font-weight: 200;
+}
+.form h3 {
+    color: rgb(100,100,100);
+    font-weight: 300;
+    font-family: 'mulibold', 'Mulish', sans-serif
+}
+
+.formContent {
+    width: 30%;
+    margin-top: 2.5%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.formInput {
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+    padding-left: 3%;
+    border: solid 1px transparent;
+}
+
+.formTextSmall {
+    width: 40%;
+    height: 4.5vh;
+}
+
+.formTextLarge {
+    width: 99%;
+    height: 4.5vh;
+}
+
+.formTextAreaLarge {
+    width: 99%;
+    height: 15vh;
+}
+
+.formNameSurname {
+    display: flex;
+    justify-content: space-between;
+    width: 102.5%;
+}
+
+.formSubmit {
+    height: 3.3rem;
+    width: 8rem;
+    background-color: rgb(0,182,220);
+    color: white;
+    border: none;
+    border-radius: 4em;
+    cursor: pointer;
+}
+
+.centerFormSubmit {
+    display: flex;
+    justify-content: center;
+}
+
+.formSubmit:hover {
+    animation-name: submitAnim;
+    animation-duration: 2s;
+}
+
+@keyframes submitAnim {
+    0% {background-color: rgb(0,182,220);}
+    50% {background-color: rgb(102, 26, 173);}
+    100% {background-color: rgb(0,182,220);}
+}
+
+.formAgreement {
+    line-height: 1.2;
+    font-family: 'mulibold', 'Mulish', sans-serif;
+    margin-top: 2vh;
+    font-size: 0.7em;
+    font-weight: 550;
+    display: flex;
+}
+
+.agreement {
+    box-shadow: none;
+    height: 13px;
+}
+
+.agreementText {
+    padding-left: 10px;
+}
+
+
+@media only screen and (max-width: 820px){
+    .formContent {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .form h3 {
+        text-align: center;
+    }
+
+    .form input {
+        text-align: center;
+    }
+
+    .formTextSmall{
+        margin-top: 5%;
+        width: 70%;
+        font-size: 0.9em;
+        padding-left: 0%;
+    }
+    .formTextLarge{
+        width: 72%;
+        margin-left: 14%;
+        padding-left: 0%;
+    }
+    .formTextAreaLarge{
+        width: 72%;
+        margin-left: 14%;
+        margin-bottom: 4%;
+        padding-left: 0%;
+    }
+    .formAgreement{
+        width: 80%;
+        margin-left: 10%;
+        padding-left: 0%;
+
+    }
+
+    .form {
+        padding-top: 10%;
+        padding-bottom: 10vh;
+        scroll-snap-align: none;
+        height: 80vh;
+        padding-bottom: 6vh;
+    }
+
+    .formNameSurname {
+        flex-flow: column;
+        margin-left: 14%;
+    }
+
+    @media only screen and (max-height: 700px){
+        .form {
+            height: 110vh;
+        }
+    }
+
+    @media only screen and (min-height: 700px) and (max-height: 900px){
+        .form {
+            padding-top: 10%;
+            height: 110vh;
+        }
+    }
+
+    @media (min-height: 1000px) {
+        .formContent {
+            font-size: 1.3em;
+        }
+
+        .formTextAreaLarge {
+            font-size: 1em;
+        }
+
+        .formTextLarge {
+            font-size: 1em;
+        }
+
+        .formSubmit {
+            font-size: 0.9em;
+            height: 5rem;
+            width: 12rem;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    font-family: "muli", 'Mulish', sans-serif;
+}
+
+body {
+    scroll-snap-type: y mandatory;
+    width: 100vw;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+a {
+    color: rgb(0,160,200);
+    text-decoration: none
+}
