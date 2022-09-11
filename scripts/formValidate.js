@@ -9,7 +9,7 @@ function validateForm() {
     let validatorErrorsText = "";
     let validatorErrors = 0;
 
-    if (name.match(/^[A-Z]+$/i) == null || name == "") {
+    if (name.match(/^[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF]+$/i) == null || name == "") {
       validatorErrors++
       validatorErrorsText += "imię, "
       inputs[0].style.borderColor = "red";
@@ -17,7 +17,7 @@ function validateForm() {
     } else {
     inputs[0].style.borderColor = "lightgreen";
     }
-    if (surname.match(/^[a-zA-Z ]*$/) == null || surname == ""){
+    if (surname.match(/^[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF]*$/) == null || surname == ""){
         validatorErrors++
         validatorErrorsText += "nazwisko, "
         inputs[1].style.borderColor = "red";
