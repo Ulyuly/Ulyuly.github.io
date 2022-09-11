@@ -24,11 +24,15 @@ function showSlides(slideIndex) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  
+
   slides[currentSlideIndex-1].style.display = "block";
   dots[currentSlideIndex-1].className += " active";
+  if(document.body.clientWidth > 460){
   background.style.background = "url('bin/sliderphoto"+currentSlideIndex+".jpeg') no-repeat fixed center";
   background.style.backgroundSize = "100% 100%";
+  } else { 
+  background.style.background = "url('bin/sliderphoto"+currentSlideIndex+"mobile.jpg') no-repeat fixed center";
+  background.style.backgroundSize = "120% 100%";
+  }
 }
 
-  

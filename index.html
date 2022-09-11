@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="bin/favicon.ico">
   </head>
   <body>
-    <div class="menu">
+    <div class="menuDesktop">
       <div>
         <img class="menuLogo" src="bin/logo.png" onclick="darkMode()"/>
       </div>
@@ -21,6 +21,17 @@
         <p class="menuItem">Szkolenia</p>
         <p class="menuItem">Usługi</p>
       </div>
+    </div>
+    <div class="menuBurgerMobile">
+      <a href=""><img  class="mobileLogo" src="bin/logo.png"></a>
+      <div class="menuBurgerContents">
+        <a class="menuBurgerItem" href="">I stopnia</a><br>
+        <a class="menuBurgerItem" href="">II stopnia</a><br>
+        <a class="menuBurgerItem" href="">Podyplomowe</a><br>
+        <a class="menuBurgerItem" href="">Szkolenia</a><br>
+        <a class="menuBurgerItem" href="">Usługi</a>
+      </div>
+      <span class="burgerButton" onclick="burgerMenu()">☰</span>
     </div>
     <div class="firstPanel" id="firstPanel">
       <div class="slider slide0 fader">
@@ -225,5 +236,6 @@
     <script src="scripts/videoPlayer.js"></script>
     <script src="scripts/formAjax.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/burgerMenu.js"></script>
   </body>
 </html>
