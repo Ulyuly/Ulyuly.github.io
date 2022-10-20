@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #dfe667;
+    font-family: Helvetica; 
+    background-color: rgb(93,66,40);
+}
+
+.header {
+    text-align: center;
+    padding-top: 2%;
+    color: white;
+}
+
+.content {
+    display: flex;
+    gap: 30%;
+    background-image: url(tablecloth-texture.gif);
+    padding-bottom: 10%;
+    height: 60vh;
+}
+
+.leftDiv {
+    padding-left: 7%;
+    padding-top: 5%;
+    width: 25%; 
+}
+
+.rightDiv {
+    padding-top: 5%;
+    width: 15%;
+    font-size: 1.1em;
+}
+
+.sizeChoice {
+    font-size: 1.2em;
+}
+
+.sizeInput {
+    color: grey;
+}
+
+.toppingSelector {
+    width: 100%;
+    border-radius: 20px;
+    font-size: 1.5em;
+}
+
+.deleteTopping {
+    cursor: pointer;
+}
+
+.contentItem {
+    padding: 1vh;
+    background-color: rgb(93,66,40);
+    color: turquoise;
+}
+
+option {
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 1vh;
+}
+
+table, td, th {
+    font-size: 1.1em;   
+    border-collapse: collapse;
+    text-align: center;
+}
+
+input[type=number] {
+    width: 40%;
+}
+
+table, th {
+    color: black;
+    border: 3px solid black;
+    background-color: #fff;
+}
+
+td {
+    color: black;
+    border: 2px solid #333;
+}
+
+.toppingsTable {
+    width: 100%;
+}
+
+ul {
+    background-color: rgb(243,243,220);
+    font-size: 1.3em;
+    border: 8px solid black;
+    border-radius: 20px;
+    padding: 10%;
+}
+
+li {
+    margin-top: 4%;
+    list-style-type: none;
+}
