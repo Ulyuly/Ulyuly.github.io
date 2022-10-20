@@ -1,0 +1,53 @@
+.list-group-item {
+  border: none !important;
+}
+.list-group {
+  justify-content: center;
+}
+.reg-form {
+  padding: 10rem 0;
+}
+li > a {
+  text-decoration: none;
+  color: black;
+}
+li > a:hover,
+.user-icon:hover {
+  transition: 0.4s;
+  opacity: 60%;
+  color: black;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 50px;
+  background: #f7f7f7;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+.logo {
+  max-width: 10%;
+}
+.fa-2xl {
+  line-height: normal !important;
+  color: black;
+}
+.fa-2xl:hover {
+  transition: 0.4s;
+  opacity: 60%;
+}
+.fa-5xl {
+  font-size: 8rem;
+}
+.pt-10 {
+  padding-top: 8rem;
+}
+.ps-10 {
+  padding-left: 8rem;
+}
+h1 {
+  text-transform: uppercase;
+  white-space: nowrap;
+}
