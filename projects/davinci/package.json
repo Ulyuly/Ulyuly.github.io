@@ -1,0 +1,25 @@
+{
+  "name": "ulyuly.github.io",
+  "version": "1.0.0",
+  "description": "First deployment of my project",
+  "main": "index.js",
+  "scripts": {
+    "test": "ben"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ulyuly/Ulyuly.github.io.git"
+  },
+  "keywords": [
+    "site"
+  ],
+  "author": "uly",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Ulyuly/Ulyuly.github.io/issues"
+  },
+  "homepage": "https://github.com/Ulyuly/Ulyuly.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

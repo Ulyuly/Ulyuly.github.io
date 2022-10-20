@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collegium Varsovium</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/globals.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/menus.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/panels.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/form.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/footer.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
+    <link rel="icon" type="image/x-icon" href="bin/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="menuDesktop">
+      <div>
+        <img
+          class="menuLogo"
+          src="bin/logo.png"
+          onclick="darkMode()"
+          alt="logo"
+        />
+      </div>
+      <div class="menuContainer">
+        <p class="menuItem">I stopnia</p>
+        <p class="menuItem">II stopnia</p>
+        <p class="menuItem">Podyplomowe</p>
+        <p class="menuItem">Szkolenia</p>
+        <p class="menuItem">Usługi</p>
+      </div>
+    </div>
+    <div class="menuBurgerMobile">
+      <a href=""><img class="mobileLogo" src="bin/logo.png" alt="logo" /></a>
+      <div class="menuBurgerContents">
+        <p><a class="menuBurgerItem" href="">I stopnia</a></p>
+        <br />
+        <p><a class="menuBurgerItem" href="">II stopnia</a></p>
+        <br />
+        <p><a class="menuBurgerItem" href="">Podyplomowe</a></p>
+        <br />
+        <p><a class="menuBurgerItem" href="">Szkolenia</a></p>
+        <br />
+        <p><a class="menuBurgerItem" href="">Usługi</a></p>
+        <br />
+      </div>
+      <span class="burgerButton" onclick="burgerMenu()">☰</span>
+    </div>
+
+    <div class="firstPanel" id="firstPanel">
+      <div class="slider slide0 fader">
+        <h1 class="firstPanelParagraph">Będziesz się uczyć z ciekawością.</h1>
+        <h1 class="firstPanelParagraph">Obiecujemy.</h1>
+        <br />
+        <br />
+        <p>
+          <button class="firstPanelButton">ZOBACZ WIĘCEJ</button
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="firstPanelButton">UMÓW SIĘ Z ANIOŁEM</button>
+        </p>
+      </div>
+      <div class="slider slide1 fader">
+        <h1 class="firstPanelParagraph">Będziesz się uczyć z zapałem.</h1>
+        <h1 class="firstPanelParagraph">Przysięgamy.</h1>
+        <br />
+        <br />
+        <p>
+          <button class="firstPanelButton">ZOBACZ WIĘCEJ</button
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="firstPanelButton">UMÓW SIĘ Z ANIOŁEM</button>
+        </p>
+      </div>
+      <div class="slider slide2 fader">
+        <h1 class="firstPanelParagraph">Będziesz się uczyć z przyjemnością.</h1>
+        <h1 class="firstPanelParagraph">Zapewniamy.</h1>
+        <br />
+        <br />
+        <p>
+          <button class="firstPanelButton">ZOBACZ WIĘCEJ</button
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="firstPanelButton">UMÓW SIĘ Z ANIOŁEM</button>
+        </p>
+      </div>
+      <div class="slider slide3 fader">
+        <h1 class="firstPanelParagraph">Będziesz się uczyć z przyjemnością.</h1>
+        <h1 class="firstPanelParagraph">Gwarantujemy.</h1>
+        <br />
+        <br />
+        <p>
+          <button class="firstPanelButton">ZOBACZ WIĘCEJ</button
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="firstPanelButton">UMÓW SIĘ Z ANIOŁEM</button>
+        </p>
+      </div>
+      <div class="prevButtonSlider" onclick="plusSlides(-1)">➜</div>
+      <div class="nextButtonSlider" onclick="plusSlides(1)">➜</div>
+
+      <div class="sliderDotContainer">
+        <span class="sliderDot" onclick="dotChanger(1)"></span>
+        <span class="sliderDot" onclick="dotChanger(2)"></span>
+        <span class="sliderDot" onclick="dotChanger(3)"></span>
+        <span class="sliderDot" onclick="dotChanger(4)"></span>
+      </div>
+    </div>
+    <div class="secondPanel">
+      <div class="secondPanelText">
+        <h1 class="secondHeader">Dla kogo?</h1>
+        <br /><br />
+        <p class="secondParagraph">
+          Dedykowane nauczycielom posiadającym przygotowanie pedagogiczne,
+          którzy chcą uzyskać merytoryczne i metodyczne przygotowanie do
+          nauczania kolejnego przedmiotu - Geografii
+        </p>
+        <br /><br />
+        <p class="secondParagraph">
+          Studia adresowane są do osób legitymujących się wyższym wykształceniem
+          na poziomie studiów licencjackim o specjalnościach nadających
+          kwalifikacje nauczycielskie i przygotowanie pedagogiczne, lub
+          słuchaczy legitymujących się wyższym wykształceniem na poziomie
+          studiów magisterskich nadających kwalifikacje nauczycielskie i
+          przygotowanie pedagogiczne, zgodnie z Rozporządzeniem Ministra
+          Edukacji Narodowej z dnia 1 sierpnia 2017 r. w sprawie szczegółowych
+          kwalifikacji wymaganych od nauczycieli
+          <a href="#">(Dz.U. 2017 poz. 1575)</a>.
+        </p>
+        <br /><br />
+        <div class="secondParagraph">
+          Wymagane od kandydata:
+          <ul>
+            <li class="secondPanelList">Ukończone studia wyższe</li>
+            <li class="secondPanelList">Przygotowanie pedagogiczne</li>
+          </ul>
+        </div>
+      </div>
+      <img class="secondPanelImg" src="bin/secondPanel.png" alt="apple" />
+    </div>
+    <div class="thirdPanel">
+      <div class="thirdPanelText">
+        <h1 class="thirdHeader">Po co?</h1>
+        <br /><br />
+        <p class="thirdParagraph">
+          UW wie co zrobić, by programy proponowanych kierunków studiów były jak
+          najbardziej atrakcyjne z biznesowego punktu widzenia. Do współpracy
+          zapraszamy przedsiębiorców, trenerów, doświadczonych praktyków. Dbamy
+          o to, żeby nasi studenci korzystali z doświadczenia i wiedzy osób,
+          które odniosły w życiu zawodowy sukces. Dążymy do tego, by wybierający
+          naszą uczelnię już w trakcie studiów mieli kontakt z jak największą
+          liczbą pracodawców i praktyków biznesu ponieważ wiemy, że pomoże to im
+          w zdobyciu wielu potrzebnych kwalifikacji oraz umiejętności, które
+          zaprocentują w każdym miejscu pracy a także zainspiruje do poszerzania
+          swoich kompetencji.
+        </p>
+      </div>
+      <img class="thirdPanelImg" src="bin/thirdPanel.png" alt="handshake" />
+    </div>
+    <div class="fourthPanel">
+      <div class="fourthPanelText">
+        <h1 class="fourthHeader">Z kim?</h1>
+        <br /><br />
+        <p class="fourthParagraph">
+          Ciekawość jest najpotężniejszą cechą ludzką, która popycha ludzi do
+          ciągłego rozwoju. CDV to miejsce, w którym studenci z zainteresowaniem
+          i z przyjemnością zdobywają wiedzę. Zarówno studenci, absolwenci, jak
+          i pracownicy to osoby nie tylko ciekawe świata, ale także pełne pasji
+          w odkrywaniu nowych rzeczy i w pozytywny sposób wpływające na swoje
+          otoczenie.
+        </p>
+        <br /><br />
+        <p class="fourthParagraph">
+          Nasze kierunki studiów są interesujące i innowacyjne, tworzone we
+          współpracy z pracodawcami oraz na podstawie trendów w światowej
+          gospodarce i kierunku zmian na dynamicznym rynku pracy. Nasi
+          absolwenci znajdują pracę zgodną ze swoimi zainteresowaniami i
+          wykształceniem.
+        </p>
+        <br /><br />
+        <p class="fourthParagraphVideoMobile">
+          <a href="https://www.youtube.com/watch?v=23F2iUEP2Qc" target="_blank"
+            >Tutaj zobacz nasze wideo :)</a
+          >
+        </p>
+      </div>
+      <img
+        class="fourthPanelImg"
+        src="bin/fourthPanel.png"
+        alt="video"
+        onclick="playVideo()"
+      />
+      <div class="videoEmbed" onclick="stopVideo()">
+        <iframe
+          width="1280"
+          class="videoEmbedIframe"
+          height="780"
+          src="https://www.youtube.com/embed/23F2iUEP2Qc"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <script src="videoPlayer.js"></script>
+    </div>
+    <div class="form">
+      <h3 class="formUpperText">Nie znalazłeś odpowiedniego kontaktu?</h3>
+      <h4 class="formUpperText">Skorzystaj z formularza.</h4>
+      <div class="formContent">
+        <form
+          name="myForm"
+          method="GET"
+          onsubmit="return validateForm()"
+          id="formContact"
+        >
+          <div class="formNameSurname">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="formTextSmall formInput"
+              placeholder="Imię"
+            />
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              class="formTextSmall formInput"
+              placeholder="Nazwisko"
+            />
+          </div>
+          <br />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="formTextLarge formInput"
+            placeholder="Adres e-mail"
+          />
+          <br /><br />
+          <input
+            type="text"
+            name="textarea"
+            id="textarea"
+            class="formTextAreaLarge formInput"
+            placeholder="Treść wiadomości"
+          />
+          <br />
+
+          <div class="formAgreement">
+            <input
+              type="checkbox"
+              class="agreement formInput"
+              name="agreement"
+            />
+            <span class="agreementText"
+              >Wyrażam zgodę na przetwarzanie moich danych osobowych w
+              rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych
+              osobowych oraz ustawy z dnia 16 lipca 2004 roku Prawo
+              telekomunikacyjne w celach marketingowych przez Collegium Da Vinci
+              i oświadczam, iż podanie przeze mnie danych osobowych jest
+              dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu
+              do moich danych osobowych, ich zmiany oraz usunięcia.</span
+            >
+          </div>
+
+          <br />
+          <div class="centerFormSubmit">
+            <input type="submit" class="formSubmit" value="Wyślij" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footerFlex">
+        <div class="footerLeft">
+          <p>ul. Głogowska 10 61-579 Poznań tel. 61 27 11 000</p>
+          <br />
+          <span
+            ><a href="https://goo.gl/maps/ovHVNV1LscBzTHBU7" target="_blank"
+              ><img class="mapThumb" src="bin/mapThumb.png" alt="mapLink" /></a
+          ></span>
+        </div>
+        <div class="footerMiddle">
+          <div class="footerLink"><b>O nas</b></div>
+          <div class="footerLink">Dla kandydata</div>
+          <div class="footerLink">Dla studenta</div>
+          <div class="footerLink">Dla biznesu</div>
+          <div class="footerLink">Na skróty</div>
+          <div class="footerLink">Dlaczego CDV</div>
+          <div class="footerLink">Poradnik Maturzysty</div>
+          <div class="footerLink">Wirtualna Uczelnia</div>
+          <div class="footerLink">Współpraca z biznesem</div>
+          <div class="footerLink">Aktualności</div>
+          <div class="footerLink">Kadra naukowa</div>
+          <div class="footerLink">Rekrutacja</div>
+          <div class="footerLink">Stypendia</div>
+          <div class="footerLink">EmotionsLAB</div>
+          <div class="footerLink">Wydarzenia</div>
+          <div class="footerLink">Dla mediów</div>
+          <div class="footerLink">Kredyt Studencki</div>
+          <div class="footerLink">Biuro Karier</div>
+          <div class="footerLink">Wynajem sal</div>
+          <div class="footerLink">Konferencje</div>
+          <div class="footerLink">Kontakt</div>
+          <div class="footerLink">Studia dla cudzoziemców</div>
+          <div class="footerLink">Studiuj Dalej</div>
+          <div class="footerLink">Znajdź pracownika</div>
+          <div class="footerLink">Blog</div>
+        </div>
+      </div>
+      <div class="footerRight">Projekt i realizacja: Crafton</div>
+    </div>
+    <script src="scripts/sliderScript.js"></script>
+    <script src="scripts/formValidate.js"></script>
+    <script src="scripts/videoPlayer.js"></script>
+    <script src="scripts/formAjax.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/burgerMenu.js"></script>
+  </body>
+</html>
