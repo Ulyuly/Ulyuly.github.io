@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3b97ed83.css",
+    "main.js": "/static/js/main.791c9551.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/color-sharp.png": "/static/media/color-sharp.bea361cfef80fefc2d1e.png",
+    "static/media/project-img5.png": "/static/media/project-img5.a2e8c6086e434873732f.png",
+    "static/media/project-img2.png": "/static/media/project-img2.f0b8ecabe842705b8821.png",
+    "static/media/banner-bg.png": "/static/media/banner-bg.ed6ac8b15cc7e1db116d.png",
+    "static/media/project-img1.png": "/static/media/project-img1.9725618fac0c5d34515e.png",
+    "static/media/react.png": "/static/media/react.953db664f90ad179e7da.png",
+    "static/media/bootstrap.png": "/static/media/bootstrap.025857f2368cdd46212e.png",
+    "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/project-img4.png": "/static/media/project-img4.84426e0cac4ce658a06b.png",
+    "static/media/php.png": "/static/media/php.785c0742e2a083b8f82b.png",
+    "static/media/github.png": "/static/media/github.6facf078c07736e77b48.png",
+    "static/media/project-img6.png": "/static/media/project-img6.f85e79afe18b543efbef.png",
+    "static/media/javascript.png": "/static/media/javascript.bb54340fef3a4c9fbb89.png",
+    "static/media/css.png": "/static/media/css.84de5dab5fab27f4161c.png",
+    "static/media/ben.png": "/static/media/ben.0045e190a5fc74c416c1.png",
+    "static/media/html.png": "/static/media/html.2c6a71b184b518b01b9a.png",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/sql.png": "/static/media/sql.4676ad983d6bd3e9fac9.png",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/logo.svg": "/static/media/logo.eaf3c0bc058e0ed6471ba20dc0af6da2.svg",
+    "static/media/nav-icon1.svg": "/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
+    "index.html": "/index.html",
+    "static/media/nav-icon2.svg": "/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
+    "main.3b97ed83.css.map": "/static/css/main.3b97ed83.css.map",
+    "main.791c9551.js.map": "/static/js/main.791c9551.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b97ed83.css",
+    "static/js/main.791c9551.js"
+  ]
+}
